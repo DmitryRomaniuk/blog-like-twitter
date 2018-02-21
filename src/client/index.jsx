@@ -2,13 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
 import App from '../shared/containers/App'
+import { APP_CONTAINER_CLASS } from '../shared/config'
 
 const render = Component => {
   ReactDOM.render(
     <AppContainer>
       <Component />
     </AppContainer>,
-    document.getElementById('root'),
+    document.getElementById(APP_CONTAINER_CLASS),
   )
 }
 

@@ -9,12 +9,10 @@ const renderApp = (location) => {
     `<!doctype html>
     <html>
       <head>
-        <link rel="stylesheet" href="${STATIC_PATH}/css/bootstrap.min.css">
-        <link rel="stylesheet" href="${STATIC_PATH}/css/styles.css">
-        <link rel="icon" href="${STATIC_PATH}/img/favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       </head>
       <body>
-        <div class="${APP_CONTAINER_CLASS}">${appHtml}</div>
+        <div id="${APP_CONTAINER_CLASS}">${appHtml}</div>
         <script src="${isProd ? STATIC_PATH : `http://localhost:${WDS_PORT}/dist`}/js/bundle.js"></script>
       </body>
     </html>`
